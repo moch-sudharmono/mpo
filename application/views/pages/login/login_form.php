@@ -64,7 +64,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- BEGIN LOGO -->
 <div class="logo">
 	<a href="<?php echo base_url() ?>">
-	<img src="<?php echo base_url() ?>theme/assets/admin/layout/img/logo-big.png" alt=""/>
+	<strong>MPO</strong>2017
 	</a>
 </div>
 <!-- END LOGO -->

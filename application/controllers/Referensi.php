@@ -1,18 +1,16 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Page extends MY_Controller {
+/*
+ * Referensi : Referensi Persentase
+ */
+
+class Referensi extends MY_Controller {
 
 	public function __construct()
 	{
             parent::__construct();
             // Your own constructor code
-
-            //$data = $this->session->userdata('gajiku_in');
-            //if( !$this->is_logged_in() )
-            //{
-            //    redirect("login");
-            //}
 
             /*if( !$this->verify_role('admin') )
             {
@@ -29,7 +27,7 @@ class Page extends MY_Controller {
                             show_404();
             }
 
-            $data['title'] = "Dashboard"; // Capitalize the first letter
+            $data['title'] = "Referensi | MPO 2017"; // Capitalize the first letter
 
             $this->load->view('templates/header', $data);
             $this->load->view('pages/'.$page, $data);
