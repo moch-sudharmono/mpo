@@ -33,6 +33,15 @@ class MY_Controller extends Auth_Controller
 			}
 		}
 	}
+	
+	function get_csrf_json(){
+        $csrf = array(
+            'name' => $this->security->get_csrf_token_name(),
+            'hash' => $this->security->get_csrf_hash()
+		);
+        
+        echo json_encode($csrf);
+    }
 }
 
 /* End of file MY_Controller.php */

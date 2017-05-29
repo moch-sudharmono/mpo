@@ -35,7 +35,7 @@ $config['base_url'] = "http://".$_SERVER['HTTP_HOST']."/";
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
@@ -449,7 +449,7 @@ $config['global_xss_filtering'] = FALSE;
 | 'csrf_exclude_uris' = Array of URIs which ignore CSRF checks
 */
 $config['csrf_protection'] = true;
-$config['csrf_token_name'] = 'csrf_ppid';
+$config['csrf_token_name'] = 'csrf_nama';
 $config['csrf_cookie_name'] = 'csrf_cookie_name';
 $config['csrf_expire'] = 7200;
 $config['csrf_regenerate'] = TRUE;
