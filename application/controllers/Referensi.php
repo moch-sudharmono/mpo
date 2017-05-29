@@ -20,7 +20,7 @@ class Referensi extends MY_Controller {
 	
 	public function index()
 	{	
-            $page = 'home/main';
+            $page = 'referensi/main';
             if ( ! file_exists(APPPATH.'views/pages/'.$page.'.php'))
             {
                             // Whoops, we don't have a page for that!

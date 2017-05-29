@@ -23,7 +23,7 @@ class Laporan extends MY_Controller {
 	
 	public function index()
 	{	
-            $page = 'home/main';
+            $page = 'laporan/main';
             if ( ! file_exists(APPPATH.'views/pages/'.$page.'.php'))
             {
                             // Whoops, we don't have a page for that!
@@ -39,7 +39,7 @@ class Laporan extends MY_Controller {
 
     public function kegiatan()
     {   
-            $page = 'home/main';
+            $page = 'laporan/kegiatan';
             if ( ! file_exists(APPPATH.'views/pages/'.$page.'.php'))
             {
                             // Whoops, we don't have a page for that!
@@ -55,7 +55,7 @@ class Laporan extends MY_Controller {
 
     public function wilayah()
     {   
-            $page = 'home/main';
+            $page = 'laporan/wilayah';
             if ( ! file_exists(APPPATH.'views/pages/'.$page.'.php'))
             {
                             // Whoops, we don't have a page for that!
@@ -71,7 +71,23 @@ class Laporan extends MY_Controller {
 
     public function display()
     {   
-            $page = 'home/main';
+            $page = 'laporan/display';
+            if ( ! file_exists(APPPATH.'views/pages/'.$page.'.php'))
+            {
+                            // Whoops, we don't have a page for that!
+                            show_404();
+            }
+
+            $data['title'] = "Rekapitulasi Laporan | MPO 2017"; // Capitalize the first letter
+
+            $this->load->view('templates/header', $data);
+            $this->load->view('pages/'.$page, $data);
+            $this->load->view('templates/footer', $data);
+    }
+
+    public function rekapitulasi()
+    {   
+            $page = 'laporan/rekapitulasi';
             if ( ! file_exists(APPPATH.'views/pages/'.$page.'.php'))
             {
                             // Whoops, we don't have a page for that!

@@ -20,7 +20,7 @@ class Keuangan extends MY_Controller {
 	
 	public function index()
 	{	
-            $page = 'home/main';
+            $page = 'keuangan/main';
             if ( ! file_exists(APPPATH.'views/pages/'.$page.'.php'))
             {
                             // Whoops, we don't have a page for that!
@@ -33,6 +33,22 @@ class Keuangan extends MY_Controller {
             $this->load->view('pages/'.$page, $data);
             $this->load->view('templates/footer', $data);
 	}
+
+    public function detail($id=null)
+    {   
+            $page = 'keuangan/detail';
+            if ( ! file_exists(APPPATH.'views/pages/'.$page.'.php'))
+            {
+                            // Whoops, we don't have a page for that!
+                            show_404();
+            }
+
+            $data['title'] = "Realisasi Keuangan | MPO 2017"; // Capitalize the first letter
+
+            $this->load->view('templates/header', $data);
+            $this->load->view('pages/'.$page, $data);
+            $this->load->view('templates/footer', $data);
+    }
 
     public function create()
     {   

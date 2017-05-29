@@ -34,6 +34,70 @@ class Fisik extends MY_Controller {
             $this->load->view('templates/footer', $data);
 	}
 
+    public function submain($id=null)
+    {   
+            $page = 'fisik/submain';
+            if ( ! file_exists(APPPATH.'views/pages/'.$page.'.php'))
+            {
+                            // Whoops, we don't have a page for that!
+                            show_404();
+            }
+
+            $data['title'] = "Realisasi Fisik | MPO 2017"; // Capitalize the first letter
+
+            $this->load->view('templates/header', $data);
+            $this->load->view('pages/'.$page, $data);
+            $this->load->view('templates/footer', $data);
+    }
+
+    public function penerima($id=null)
+    {   
+            $page = 'fisik/penerima';
+            if ( ! file_exists(APPPATH.'views/pages/'.$page.'.php'))
+            {
+                            // Whoops, we don't have a page for that!
+                            show_404();
+            }
+
+            $data['title'] = "Realisasi Fisik | MPO 2017"; // Capitalize the first letter
+
+            $this->load->view('templates/header', $data);
+            $this->load->view('pages/'.$page, $data);
+            $this->load->view('templates/footer', $data);
+    }
+
+    public function program($id=null)
+    {   
+            $page = 'fisik/main';
+            if ( ! file_exists(APPPATH.'views/pages/'.$page.'.php'))
+            {
+                            // Whoops, we don't have a page for that!
+                            show_404();
+            }
+
+            $data['title'] = "Realisasi Fisik | MPO 2017"; // Capitalize the first letter
+
+            $this->load->view('templates/header', $data);
+            $this->load->view('pages/'.$page, $data);
+            $this->load->view('templates/footer', $data);
+    }
+
+    public function target($id=null)
+    {   
+            $page = 'fisik/target';
+            if ( ! file_exists(APPPATH.'views/pages/'.$page.'.php'))
+            {
+                            // Whoops, we don't have a page for that!
+                            show_404();
+            }
+
+            $data['title'] = "Realisasi Fisik | MPO 2017"; // Capitalize the first letter
+
+            $this->load->view('templates/header', $data);
+            $this->load->view('pages/'.$page, $data);
+            $this->load->view('templates/footer', $data);
+    }
+
     public function create()
     {   
             $page = 'fisik/create';

@@ -18,32 +18,32 @@
                 </a>
             </li>
             <li>
-                <a href="<?= base_url() ?>page/pembelian_list">
+                <a href="<?= base_url() ?>referensi">
                 <i class="fa fa-barcode"></i>
                 <span class="title">Persentase</span>
                 </a>
             </li>
             <li>
-                <a href="<?= base_url() ?>page/produk_list">
+                <a href="<?= base_url() ?>mak">
                 <i class="fa fa-cube"></i>
                 <span class="title">Mata Anggaran Kerja</span>
                 </a>
             </li>
             <li>
-                <a href="<?= base_url() ?>page/transaksi_list">
+                <a href="#">
                 <i class="fa fa-tasks"></i>
                 <span class="title">Kabupaten / Kota</span>
                 </a>
             </li>
             <li>
-                <a href="<?= base_url() ?>page/pengeluaran_list">
-                <i class="fa fa-credit-card"></i>
+                <a href="#">
+                <i class="fa fa-ban"></i>
                 <span class="title">Errors</span>
                 </a>
             </li>
             <li>
-                <a href="<?= base_url() ?>page/pemasukkan_list">
-                <i class="fa fa-money"></i>
+                <a href="<?= base_url() ?>users">
+                <i class="fa fa-users"></i>
                 <span class="title">Users</span>
                 </a>
             </li>

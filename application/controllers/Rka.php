@@ -37,6 +37,22 @@ class Rka extends MY_Controller {
             $this->load->view('templates/footer', $data);
 	}
 
+    public function detail($id=null)
+    {   
+            $page = 'rka/detail';
+            if ( ! file_exists(APPPATH.'views/pages/'.$page.'.php'))
+            {
+                            // Whoops, we don't have a page for that!
+                            show_404();
+            }
+
+            $data['title'] = "Rencana Kerja Anggaran | MPO 2017"; // Capitalize the first letter
+
+            $this->load->view('templates/header', $data);
+            $this->load->view('pages/'.$page, $data);
+            $this->load->view('templates/footer', $data);
+    }
+
     public function create()
     {   
             $page = 'rka/create';

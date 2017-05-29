@@ -57,7 +57,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="<?= base_url() ?>komitmen/create">
+					<a href="<?= base_url() ?>komitmen">
 						Komitmen
 					</a>
 				</li>
@@ -72,7 +72,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="<?= base_url() ?>laporan">
+					<a href="<?= base_url() ?>laporan/rekapitulasi">
 						Rekapitulasi
 					</a>
 				</li>									
