@@ -20,7 +20,7 @@ class Fisik extends MY_Controller {
 	
 	public function index()
 	{	
-            $page = 'home/main';
+            $page = 'fisik/main';
             if ( ! file_exists(APPPATH.'views/pages/'.$page.'.php'))
             {
                             // Whoops, we don't have a page for that!
@@ -33,4 +33,61 @@ class Fisik extends MY_Controller {
             $this->load->view('pages/'.$page, $data);
             $this->load->view('templates/footer', $data);
 	}
+
+    public function create()
+    {   
+            $page = 'fisik/create';
+            if ( ! file_exists(APPPATH.'views/pages/'.$page.'.php'))
+            {
+                            // Whoops, we don't have a page for that!
+                            show_404();
+            }
+
+            $data['title'] = "Dashboard"; 
+
+            $this->load->view('templates/header', $data);
+            $this->load->view('pages/'.$page, $data);
+            $this->load->view('templates/footer', $data);
+    }
+
+    public function update($id)
+    {   
+            $page = 'fisik/update';
+            if ( ! file_exists(APPPATH.'views/pages/'.$page.'.php'))
+            {
+                            // Whoops, we don't have a page for that!
+                            show_404();
+            }
+
+            $data['title'] = "Dashboard"; 
+
+            $this->load->view('templates/header', $data);
+            $this->load->view('pages/'.$page, $data);
+            $this->load->view('templates/footer', $data);
+    }
+
+    public function save()
+    {               
+            $data['title'] = "Dashboard"; 
+
+            $this->load->view('templates/header', $data);
+            $this->load->view('pages/'.$page, $data);
+            $this->load->view('templates/footer', $data);
+    }
+
+    public function delete($id)
+    {   
+            $page = 'rka/update';
+            if ( ! file_exists(APPPATH.'views/pages/'.$page.'.php'))
+            {
+                            // Whoops, we don't have a page for that!
+                            show_404();
+            }
+
+            $data['title'] = "Dashboard"; 
+
+            $this->load->view('templates/header', $data);
+            $this->load->view('pages/'.$page, $data);
+            $this->load->view('templates/footer', $data);
+    }
 }

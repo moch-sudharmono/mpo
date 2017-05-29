@@ -30,6 +30,9 @@
 			</div>
 		</div>
 		<!-- END LOGO -->
+		<!-- BEGIN HORIZANTAL MENU -->
+		<?php $this->load->view("templates/horizontal_menu") ?>
+		<!-- END HORIZANTAL MENU -->
 		<!-- BEGIN RESPONSIVE MENU TOGGLER -->
 		<a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
 		</a>
